@@ -5,7 +5,24 @@ int main()
 {   int numeroUno;
     int numeroDos;
     int numeroTres;
+    int maximo;
+    int minimo;
 
-    printf("Hello world!\n");
+    scanf("%d",&numeroUno);
+    maximo = numeroUno;
+    minimo = numeroUno;
+
+    scanf("%d", numeroDos);
+
+    if(numeroDos < minimo)
+    { minimo = numeroDos;
+    } else
+    {
+     if (numeroDos>maximo)
+     {
+         maximo = numeroDos;
+     }
+    }
+
     return 0;
 }
